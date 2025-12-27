@@ -1,0 +1,53 @@
+{
+  "name": "compta-backend",
+  "version": "1.0.0",
+  "description": "Backend pour système d'authentification Compta",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "init-roles": "node scripts/initRoles.js",
+    "check-db": "node scripts/checkMongoDB.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "canvas": "^3.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.10.0",
+    "express-session": "^1.17.3",
+    "form-data": "^4.0.4",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^2.0.2",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "passport": "^0.6.0",
+    "passport-discord": "^0.1.4",
+    "pdf-parse": "^1.1.1",
+    "puppeteer": "^24.20.0",
+    "sharp": "^0.34.4",
+    "uuid": "^13.0.0",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^7.1.4"
+  },
+  "keywords": [
+    "authentication",
+    "mongodb",
+    "discord",
+    "express"
+  ],
+  "author": "Votre nom",
+  "license": "ISC"
+}
